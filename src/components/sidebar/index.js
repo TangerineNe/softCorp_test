@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Footer } from "./components/footer";
-import { Navigation } from "./components/navigation";
+import { Footer } from "./components/Footer";
+import { Navigation } from "./components/Navigation";
 
 const Wrapper = styled.div`
 	position: relative;

@@ -1,4 +1,5 @@
-import { Sidebar, Main } from "../../components";
+import { Sidebar } from "../Sidebar";
+import { Main } from "../Main";
 import { createGlobalStyle } from "styled-components";
 import { Fragment } from "react";
 

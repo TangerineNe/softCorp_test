@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { GreenBtn } from "../../GreenBtn"
 import darleneRobertsonImg from "../icons/Ellipse13.svg";
 
 const UserBlock = styled.div`
@@ -15,18 +16,7 @@ const UserBlock = styled.div`
 		justify-content: space-between;
 	}
 `;
-const SignOut = styled.button`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	width: 100px;
-	height: 34px;
-	background: rgba(5, 131, 115, 0.1);
-	border-radius: 6px;
-	color: #058373;
-	font-weight: 500;
-	margin-right: 27px;
+const SignOutBtn = styled(GreenBtn)`
 	@media (min-width: 321px) {
 		display: none;
 	}
@@ -46,7 +36,7 @@ const Footer = () => (
 				Robertson
 			</p>
 		</User>
-		<SignOut as="div">Sign out</SignOut>
+		<SignOutBtn>Sign out</SignOutBtn>
 	</UserBlock>
 );
 export { Footer };
