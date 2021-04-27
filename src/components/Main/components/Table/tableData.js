@@ -46,7 +46,7 @@ for (let i = 0; i < 20; i++) {
 			fullText: "Afternoon"
 		},
 		{
-			shortText: "€248",
+			shortText: '<font color="#8697a8">€</font>248',
 			fullText: "15:00 - 23:00"
 		},
 		{

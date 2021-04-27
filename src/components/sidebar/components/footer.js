@@ -17,6 +17,7 @@ const UserBlock = styled.div`
 	}
 `;
 const SignOutBtn = styled(GreenBtn)`
+	margin-right: 27px;
 	@media (min-width: 561px) {
 		display: none;
 	}

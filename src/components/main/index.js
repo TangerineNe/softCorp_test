@@ -17,6 +17,7 @@ const MainWrapper = styled.div`
 		margin: 0;
 		top: 0px;
 		width: 100%;
+		display: ${(props) => (props.isActive ? "block" : "none")};
 	}
 `;
 const Header = styled.div`
@@ -41,12 +42,12 @@ const Header = styled.div`
 	}
 `;
 const ShortText = styled.span`
-	@media (min-width: 830px){
+	@media (min-width: 830px) {
 		display: none;
 	}
 `;
 const FullText = styled.span`
-	@media (max-width: 830px){
+	@media (max-width: 830px) {
 		display: none;
 	}
 `;
@@ -67,8 +68,8 @@ const SignOutBtn = styled(GreenBtn)`
 		display: none;
 	}
 `;
-const Main = () => (
-	<MainWrapper>
+const Main = ({ isActive }) => (
+	<MainWrapper isActive={isActive}>
 		<SignOutBtn>Sign Out</SignOutBtn>
 		<Header>
 			<StyledH1>

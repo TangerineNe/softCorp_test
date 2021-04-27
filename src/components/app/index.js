@@ -1,11 +1,14 @@
+import styled, { createGlobalStyle } from "styled-components";
+import { useState } from "react";
+import { Fragment } from "react";
 import { Sidebar } from "../Sidebar";
 import { Main } from "../Main";
-import styled, { createGlobalStyle } from "styled-components";
-import { Fragment } from "react";
+import { Header } from "../Header";
 
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
+		min-width: 320px;
   }
   @font-face{
 		font-family: "Inter";
@@ -32,17 +35,24 @@ const AppWrapper = styled.div`
 	display: grid;
 	grid-template-columns: 247px 1fr;
 	grid-template-rows: 100vh;
-	@media (max-width: 560px){
+	@media (max-width: 560px) {
 		grid-template-columns: 1fr;
+		grid-template-rows: 56px calc(100vh - 56px);
 	}
 `;
 function App() {
+	let [menuIsActive, setMenuIsActive] = useState(false);
+	console.log(menuIsActive);
 	return (
 		<Fragment>
 			<GlobalStyle />
 			<AppWrapper>
-				<Sidebar />
-				<Main />
+				<Header
+					onClick={() => setMenuIsActive(!menuIsActive)}
+					menuIsActive={menuIsActive}
+				/>
+				<Sidebar isActive={menuIsActive} />
+				<Main isActive={!menuIsActive} />
 			</AppWrapper>
 		</Fragment>
 	);

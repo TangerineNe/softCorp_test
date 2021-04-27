@@ -102,8 +102,8 @@ const Table = () => (
 									src={tableData.headers[j].img}
 								/>
 							)}
-							<ShortText>{text.shortText}</ShortText>
-							<FullText>{text.fullText}</FullText>
+							<ShortText dangerouslySetInnerHTML={{ __html: text.shortText }} />
+							<FullText dangerouslySetInnerHTML={{ __html: text.fullText }} />
 						</StyledTd>
 					</Fragment>
 				))}
@@ -111,5 +111,4 @@ const Table = () => (
 		))}
 	</StyledTable>
 );
-
 export { Table };

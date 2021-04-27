@@ -10,9 +10,10 @@ const Navigation = styled.ul`
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	width: 100%;
+	width: calc(100% - 20px);
 	padding: 45px 0 0 0;
 	margin: 0;
+
 	@media (max-width: 560px) {
 		padding: 0;
 		margin-left: 20px;
