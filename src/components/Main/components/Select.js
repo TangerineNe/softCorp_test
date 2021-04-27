@@ -1,5 +1,5 @@
 const Select = () => (
-	<select>
+	<select className = "select">
 		<option value="0">January, 2021</option>
 		<option value="1">February</option>
 		<option value="2">March</option>

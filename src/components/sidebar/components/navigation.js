@@ -13,7 +13,7 @@ const Navigation = styled.ul`
 	width: 100%;
 	padding: 45px 0 0 0;
 	margin: 0;
-	@media (max-width: 320px) {
+	@media (max-width: 560px) {
 		padding: 0;
 		margin-left: 20px;
 		align-items: flex-start;

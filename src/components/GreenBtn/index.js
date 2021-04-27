@@ -8,7 +8,6 @@ const GreenBtn = styled.div`
 	color: #058373;
 	font: 14px Inter;
 	font-weight: 500;
-	margin-right: 27px;
 	cursor: pointer;
 `;
 export { GreenBtn };

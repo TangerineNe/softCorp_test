@@ -8,16 +8,15 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	justify-content: space-between;
 	background: #e8eaf0;
-	width: 247px;
-	height: 100vh;
 	overflow-y: scroll;
 	font: 14px Inter;
 	font-weight: 400;
-	@media (max-width: 320px) {
+	@media (max-width: 560px) {
 		width: 100%;
 		flex-direction: column-reverse;
 		justify-content: flex-end;
 		background: #fff;
+		display: none;
 	}
 	::-webkit-scrollbar {
 		width: 0;

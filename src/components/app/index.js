@@ -1,6 +1,6 @@
 import { Sidebar } from "../Sidebar";
 import { Main } from "../Main";
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import { Fragment } from "react";
 
 const GlobalStyle = createGlobalStyle`
@@ -28,12 +28,22 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 700;
 	}
 `;
+const AppWrapper = styled.div`
+	display: grid;
+	grid-template-columns: 247px 1fr;
+	grid-template-rows: 100vh;
+	@media (max-width: 560px){
+		grid-template-columns: 1fr;
+	}
+`;
 function App() {
 	return (
 		<Fragment>
 			<GlobalStyle />
-			<Sidebar />
-      <Main />
+			<AppWrapper>
+				<Sidebar />
+				<Main />
+			</AppWrapper>
 		</Fragment>
 	);
 }

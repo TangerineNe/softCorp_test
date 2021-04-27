@@ -2,25 +2,34 @@ import manImg from "./icons/Man.svg";
 import clockImg from "./icons/Clock.svg";
 const tableData = {
 	headers: [
-		{ text: "Date", img: manImg },
 		{
-			text: "Shift type",
+			shortText: "Date",
+			fullText: "Date",
+			img: manImg,
+		},
+		{
+			shortText: "Period",
+			fullText: "Shift type",
 			img: null,
 		},
 		{
-			text: "Period",
+			shortText: "Salary",
+			fullText: "Period",
 			img: clockImg,
 		},
 		{
-			text: "Hours",
+			shortText: "Bonus",
+			fullText: "Hours",
 			img: null,
 		},
 		{
-			text: "Salary (Gross)",
+			shortText: "Shift type",
+			fullText: "Salary (Gross)",
 			img: null,
 		},
 		{
-			text: "Bonus (Gross)",
+			shortText: "Hours",
+			fullText: "Bonus (Gross)",
 			img: null,
 		},
 	],
@@ -28,12 +37,30 @@ const tableData = {
 };
 for (let i = 0; i < 20; i++) {
 	tableData.body.push([
-		"January 06, 2020",
-		"Afternoon",
-		"15:00-23:00",
-		"8h",
-		"$1,630",
-		"30",
+		{
+			shortText: "January 06, 2020",
+			fullText: "January 06, 2020"
+		},
+		{
+			shortText: "15:00 - 23:00",
+			fullText: "Afternoon"
+		},
+		{
+			shortText: "€248",
+			fullText: "15:00 - 23:00"
+		},
+		{
+			shortText: "30",
+			fullText: "8h"
+		},
+		{
+			shortText: "Afternoon",
+			fullText: "$1,630"
+		},
+		{
+			shortText: "8h",
+			fullText: "30"
+		}
 	]);
 }
 export { tableData };

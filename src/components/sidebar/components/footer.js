@@ -10,14 +10,14 @@ const UserBlock = styled.div`
 	& p {
 		margin-left: 15px;
 	}
-	@media (max-width: 320px) {
+	@media (max-width: 560px) {
 		height: 117px;
 		margin: 0 0 0 23px;
 		justify-content: space-between;
 	}
 `;
 const SignOutBtn = styled(GreenBtn)`
-	@media (min-width: 321px) {
+	@media (min-width: 561px) {
 		display: none;
 	}
 `;
