@@ -60,6 +60,12 @@ const StyledTd = styled.div`
 		& > .icon{
 			display: none;
 		}
+		& > .semiBold{
+			font-weight: 600;
+		}
+		& > .medium{
+			font-weight: 500;
+		}
 	}
 `;
 const MiniHeader = styled.div`
@@ -102,7 +108,7 @@ const Table = () => (
 									src={tableData.headers[j].img}
 								/>
 							)}
-							<ShortText dangerouslySetInnerHTML={{ __html: text.shortText }} />
+							<ShortText className = { text.className } dangerouslySetInnerHTML={{ __html: text.shortText }} />
 							<FullText dangerouslySetInnerHTML={{ __html: text.fullText }} />
 						</StyledTd>
 					</Fragment>

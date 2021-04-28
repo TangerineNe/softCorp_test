@@ -46,20 +46,24 @@ for (let i = 0; i < 20; i++) {
 			fullText: "Afternoon"
 		},
 		{
-			shortText: '<font color="#8697a8">€</font>248',
-			fullText: "15:00 - 23:00"
+			shortText: '<font color="#8697a8">€ </font>248,00',
+			fullText: "15:00 - 23:00",
+			className: "semiBold"
 		},
 		{
 			shortText: "30",
-			fullText: "8h"
+			fullText: "8h",
+			className: "medium"
 		},
 		{
 			shortText: "Afternoon",
-			fullText: "$1,630"
+			fullText: "$1,630",
+			className: "medium"
 		},
 		{
 			shortText: "8h",
-			fullText: "30"
+			fullText: "30",
+			className: "medium"
 		}
 	]);
 }

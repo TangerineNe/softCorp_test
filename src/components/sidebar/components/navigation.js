@@ -8,15 +8,13 @@ import actionTrackingImg from "../icons/ActionTracking.svg";
 
 const Navigation = styled.ul`
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	flex-direction: column;
-	width: calc(100% - 20px);
-	padding: 45px 0 0 0;
+	padding: 45px 0 0 24px;
 	margin: 0;
 
 	@media (max-width: 560px) {
-		padding: 0;
-		margin-left: 20px;
+		padding-top: 0;
 		align-items: flex-start;
 	}
 `;
@@ -31,11 +29,12 @@ const NavElem = styled.li`
 	border-radius: 8px;
 	color: #0c1427;
 	padding-left: 14px;
+	box-sizing: border-box;
 	cursor: pointer;
 `;
 const StyledP = styled.p`
 	position: absolute;
-	margin-left: 48px;
+	margin-left: 32px;
 `;
 
 const NavigationWrapper = () => (

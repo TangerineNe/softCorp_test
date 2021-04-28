@@ -9,7 +9,7 @@ const MainWrapper = styled.div`
 	display: inline-flex;
 	flex-direction: column;
 	box-sizing: border-box;
-	@media (max-width: 830px) {
+	@media (max-width: 890px) {
 		padding: 122px 15px 0 15px;
 	}
 	@media (max-width: 560px) {
@@ -30,7 +30,7 @@ const Header = styled.div`
 		border-radius: 6px;
 		border: 1px solid #dedfe2;
 	}
-	@media (max-width: 830px) {
+	@media (max-width: 890px) {
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: flex-start;
@@ -42,12 +42,12 @@ const Header = styled.div`
 	}
 `;
 const ShortText = styled.span`
-	@media (min-width: 830px) {
+	@media (min-width: 890px) {
 		display: none;
 	}
 `;
 const FullText = styled.span`
-	@media (max-width: 830px) {
+	@media (max-width: 890px) {
 		display: none;
 	}
 `;
@@ -61,7 +61,7 @@ const SignOutBtn = styled(GreenBtn)`
 	position: absolute;
 	top: 44px;
 	right: 44px;
-	@media (max-width: 830px) {
+	@media (max-width: 890px) {
 		right: 15px;
 	}
 	@media (max-width: 560px) {
