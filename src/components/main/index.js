@@ -17,7 +17,7 @@ const MainWrapper = styled.div`
 		margin: 0;
 		top: 0px;
 		width: 100%;
-		display: ${(props) => (props.isActive ? "block" : "none")};
+		display: ${({isActive}) => (isActive ? "block" : "none")};
 	}
 `;
 const Header = styled.div`

@@ -42,7 +42,6 @@ const AppWrapper = styled.div`
 `;
 function App() {
 	let [menuIsActive, setMenuIsActive] = useState(false);
-	console.log(menuIsActive);
 	return (
 		<Fragment>
 			<GlobalStyle />

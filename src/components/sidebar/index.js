@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 		flex-direction: column-reverse;
 		justify-content: flex-end;
 		background: #fff;
-		display: ${(props) => (props.isActive ? "flex" : "none")};
+		display: ${({isActive}) => (isActive ? "flex" : "none")};
 	}
 	::-webkit-scrollbar {
 		width: 0;
